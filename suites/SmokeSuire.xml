@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="phptravel">
+
+    <parameter name="pathToDriver"
+               value="C:/Users/Nazar/.m2/repository/webdriver/chromedriver/win32/80.0.3987.106/chromedriver.exe"></parameter>
+
+    <test name="This test case verify Log in to the account with valid flow">
+        <classes>
+            <class name="tests.login.C1_LogInToAccount"/>
+        </classes>
+    </test>
+
+    <test name="Verify that Audi Models List include Audi A6 model">
+        <classes>
+            <class name="tests.homePage.C2_VerifyThatAudiModelsListIncludeAudiA6Model"/>
+        </classes>
+    </test>
+
+    <test name="Verify that user can add to cart Audi A6 Sedan">
+        <classes>
+            <class name="tests.carPage.C3_VerifyThatUserCanAddToCartAudiA6Sedan"/>
+        </classes>
+    </test>
+
+    <test name="Verify that user can Download data sheet for Audi A6 Sedan">
+        <classes>
+            <class name="tests.carPage.C4_VerifyThatUserCanDownloadDataSheetForAudiA6Sedan"/>
+        </classes>
+    </test>
+</suite>
